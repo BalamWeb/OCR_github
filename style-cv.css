@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'Archistico';
+  src: url('web fonts/Archistico_Simple-webfont.eot');
+  src: url('web fonts/Archistico_Simple-webfont.eot?#iefix') format('embedded-opentype'), url('web fonts/Archistico_Simple-webfont.woff') format('woff'), url('web fonts/Archistico_Simple-webfont.ttf') format('truetype'), url('web fonts/Archistico_Simple-webfont.svg#cac_champagneregular') format('svg');
+}
+
+body {
+  background: url("images/Semantic.png") no-repeat center;
+  height: 100%;
+}
+
+#page {
+  display: flex;
+}
+
+#liseret {
+  min-height: 100%;
+  background-color: grey;
+  width: 100px;
+  border: 1px solid black;
+  box-shadow: 4px 6px 2px darkgray;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+header {
+  text-align: center;
+  width: 75%;
+}
+
+h1 {
+  color: #046380;
+  font-family: 'Archistico', Arial, serif;
+  text-shadow: 4px 6px 2px grey;
+}
+
+h2 {
+  color: #046380;
+  box-shadow: 2px 4px 2px grey;
+  padding-left: 15px;
+}
+
+img {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin: 30px 60px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 4px 6px 2px grey;
+  max-width: 30%;
+}
+
+section {
+  margin: 65px 30px 20px;
+}
+
+article {
+  padding: 10px;
+  width: 30%;
+}
+
+section+p {
+  text-align: justify;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Nouvelles règles si la fenêtre fait au plus 1024px de large */
+
+@media screen and (max-width: 1024px) {
+  #liseret {
+    display: none;
+  }
+  section {
+    flex-direction: column;
+  }
+  article {
+    width: auto;
+  }
+}
